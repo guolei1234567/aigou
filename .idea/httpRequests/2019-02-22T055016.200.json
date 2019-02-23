@@ -1,0 +1,9 @@
+{
+  "success": false,
+  "message": "登陆失败",
+  "resultObj": {
+    "id": null,
+    "name": "小小六月天",
+    "password": "321456"
+  }
+}

@@ -1,0 +1,18 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: ZUUL-GATEWAY-UI
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+  instance:
+    instance-id: gateway-9527-99  #eureka上显示的id名字
+    prefer-ip-address: true
+zuul:
+  routes:
+    myEmp.serviceId: palt-employee #需要映射的服务名。自定义变量
+    myEmp.path: /taurus/** #/wbUser/**这个路径的访问都路由到serverId服务处理 访问变成：http://localhost:9527/myzuul/provider/user/5
+    ignored-services: "*" # 忽略这个服务，如果要忽略所有的服务， “*”
+  prefix: "/aigou" #统一前缀：如果有多个服务，我们还可以给服务取一个前缀：

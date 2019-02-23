@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Aigou_Basic_parent</artifactId>
+        <groupId>com.guolei.aigou</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>Aigou_Plat_Parent</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>Aigou_Plat_Interface</module>
+        <module>Aigou_Plat_Service_8001</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.guolei.aigou</groupId>
+            <artifactId>Aigou_Basic_Util</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- springBoot支持 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- spring boot 测试 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+    </dependencies>
+</project>
