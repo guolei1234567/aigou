@@ -16,6 +16,6 @@ public class AigouZuulServerApplication_9527 {
 
         System.out.println("提交到release");
 //         分支
-        System.out.println("AAA")
+        System.out.println("AAA");
     }
 }
