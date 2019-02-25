@@ -25,6 +25,6 @@ public class EmployeeController {
 
     @RequestMapping("/prin/{id}")
     public void prinEmp(@PathVariable("id") Long id){
-        System.out.println("=========华丽====="+id);
+        System.out.println("=======华丽热部署测试====="+id);
     }
 }
