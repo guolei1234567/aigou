@@ -10,10 +10,12 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @EnableEurekaClient
 @EnableZuulProxy
 public class AigouZuulServerApplication_9527 {
-//origin
+
     public static void main(String[] args) {
         SpringApplication.run(AigouZuulServerApplication_9527.class, args);
 
         System.out.println("提交到release");
+//         分支
+        System.out.println("AAA")
     }
 }
