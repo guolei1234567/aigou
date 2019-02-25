@@ -6,6 +6,6 @@ public class UserTest {
 
     @Test
     public void getUser(){
-
+        System.out.println();
     }
 }
