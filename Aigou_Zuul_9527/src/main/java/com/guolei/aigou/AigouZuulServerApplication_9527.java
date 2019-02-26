@@ -13,6 +13,5 @@ public class AigouZuulServerApplication_9527 {
 
     public static void main(String[] args) {
         SpringApplication.run(AigouZuulServerApplication_9527.class, args);
-        system.out.pringt("aaaa")
     }
 }
