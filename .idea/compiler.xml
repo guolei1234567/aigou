@@ -11,6 +11,8 @@
         <module name="Aigou_EurekaServer_7001" />
         <module name="Aigou_Plat_Interface" />
         <module name="Aigou_Plat_Service_8001" />
+        <module name="Aigou_Product_Interface" />
+        <module name="Aigou_Product_Service_8002" />
         <module name="Aigou_Zuul_9527" />
       </profile>
     </annotationProcessing>
