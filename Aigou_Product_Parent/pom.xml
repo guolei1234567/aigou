@@ -17,11 +17,4 @@
         <module>Aigou_Product_Service_8002</module>
     </modules>
 
-    <dependencies>
-        <dependency>
-            <!--数据库依赖-->
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-    </dependencies>
 </project>

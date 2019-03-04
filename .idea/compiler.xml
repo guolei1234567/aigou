@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="1000" />
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Aigou_Basic_Util" />
+        <module name="Aigou_Common_Interface" />
+        <module name="Aigou_Common_Service_8003" />
         <module name="Aigou_ConfigServer_1299" />
         <module name="Aigou_EurekaServer_7001" />
+        <module name="Aigou_MP_Generator" />
         <module name="Aigou_Plat_Interface" />
         <module name="Aigou_Plat_Service_8001" />
         <module name="Aigou_Product_Interface" />
@@ -16,5 +20,9 @@
         <module name="Aigou_Zuul_9527" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Aigou_Common_Service" target="1.8" />
+      <module name="Aigou_MybatisPlus_Generator" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

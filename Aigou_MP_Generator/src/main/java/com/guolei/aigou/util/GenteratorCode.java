@@ -34,7 +34,7 @@ public class GenteratorCode {
         // 你的是什么数据:
         dsc.setDbType(DbType.MYSQL);
         dsc.setTypeConvert(new MySqlTypeConvert());
-        dsc.setDriverName("com.mysql.jdbc.Driver");
+        dsc.setDriverName(rb.getString("jdbc.driver"));
         // rb.getString("jdbc.user")
         dsc.setUsername(rb.getString("jdbc.user"));
         dsc.setPassword(rb.getString("jdbc.pwd"));
@@ -46,7 +46,7 @@ public class GenteratorCode {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setTablePrefix(new String[] { "t_" });// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
-        strategy.setInclude(new String[]{"t_user"}); // 需要生成的表
+        strategy.setInclude(new String[]{"t_brand","t_product","t_product_type"}); // 需要生成的表
         mpg.setStrategy(strategy);
 
 
@@ -86,6 +86,18 @@ public class GenteratorCode {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 return rb.getString("OutputDirXml")+ "/com/guolei/aigou/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
+            }
+        });
+        focList.add(new FileOutConfig("/templates/controller.java.vm") {
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                return rb.getString("OutputDir") + "/com/guolei/aigou/controller/" + tableInfo.getEntityName() + "Controller.java";
+            }
+        });
+        focList.add(new FileOutConfig("/templates/query.java.vm") {
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                return rb.getString("OutputDirBase") + "/com/guolei/aigou/query/" + tableInfo.getEntityName() + "Query.java";
             }
         });
         cfg.setFileOutConfigList(focList);

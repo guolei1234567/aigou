@@ -14,7 +14,7 @@ public class EmployeeController {
         System.out.println(employee.getPassword());
        String pswd =  employee.getPassword();
         if (!employee.getName().equals("admin") || !employee.getPassword().equals("admin")) {
-            return AjaxResult.me().setSuccess(false).setMessage("登陆失败");
+            return AjaxResult.me().setSuccess(false).setMsg("登陆失败");
         }
         return AjaxResult.me();
     }

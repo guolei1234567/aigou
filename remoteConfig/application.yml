@@ -16,6 +16,8 @@ zuul:
   routes:
     myEmp.serviceId: palt-employee #需要映射的服务名。自定义变量
     myEmp.path: /taurus/** #/wbUser/**这个路径的访问都路由到serverId服务处理 访问变成：http://localhost:9527/myzuul/provider/user/5
+    myProduct.serviceId: PRODUCT-JSON #需要映射的服务名。自定义变量
+    myProduct.path: /product/** #/wbUser/**这个路径的访问都路由到serverId服务处理 访问变成：http://localhost:9527/myzuul/provider/user/5
     ignored-services: "*" # 忽略这个服务，如果要忽略所有的服务， “*”
   prefix: "/aigou" #统一前缀：如果有多个服务，我们还可以给服务取一个前缀：
 ---

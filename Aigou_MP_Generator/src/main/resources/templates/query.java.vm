@@ -1,0 +1,10 @@
+package com.guolei.aigou.query;
+
+import com.guolei.aigou.basic.query.BaseQuery;
+/**
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+public class ${table.entityName}Query extends BaseQuery{
+}
